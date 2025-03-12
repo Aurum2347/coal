@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Активированный Уголь - Твой Друг!</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffcc00, #ff6600);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ff0000;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #00ff00;
+        }
+        header h1 {
+            font-size: 48px;
+            color: #fff;
+            text-shadow: 2px 2px #0000ff;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 3px solid #0000ff;
+            box-shadow: 0 0 10px #ff00ff;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #ff0000;
+            text-align: center;
+            font-size: 32px;
+            border-bottom: 2px dashed #00ff00;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .benefits {
+            background-color: #ffffcc;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #ff6600;
+            border-radius: 5px;
+        }
+        .activator {
+            text-align: center;
+            margin: 30px 0;
+        }
+        button {
+            background-color: #00ff00;
+            color: #000;
+            border: 3px solid #ff0000;
+            padding: 15px 30px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        #scan-area {
+            margin: 20px auto;
+            width: 300px;
+            height: 200px;
+            background: url('https://via.placeholder.com/300x200?text=Приложите+уголь+сюда') no-repeat center;
+            border: 2px dashed #000;
+            display: none;
+        }
+        #progress {
+            display: none;
+            font-size: 20px;
+            color: #ff00ff;
+            margin: 20px 0;
+        }
+        #result {
+            display: none;
+            font-size: 20px;
+            color: #00ff00;
+            text-shadow: 1px 1px #ff0000;
+        }
+        #activation-code {
+            font-family: 'Courier New', monospace;
+            font-size: 24px;
+            color: #0000ff;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #0000ff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 999;
+            display: none;
+        }
+        @keyframes fireworks {
+            0% { transform: translateY(100vh); opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>АКТИВИРОВАННЫЙ УГЛЬ</h1>
+    </header>
+
+    <div class="container">
+        <h2>Почему уголь - твой лучший друг?</h2>
+        <p>Добро пожаловать на сайт, посвящённый самому крутому изобретению человечества - активированному углю! Это не просто чёрные таблетки, это настоящая магия природы!</p>
+
+        <div class="benefits">
+            <h3>Полезность угля:</h3>
+            <p>- Очищает организм от токсинов, как пылесос для твоего живота!<br>
+            - Помогает при отравлениях и вздутии - забудь про проблемы!<br>
+            - Даже зубы отбелить может, если постараться!<br>
+            - Дешёвый и доступный - в любой аптеке за копейки!</p>
+        </div>
+
+        <h2>Как это работает?</h2>
+        <p>Активированный уголь - это обычный уголь, который "разбудили" специальным способом. Его поры впитывают всё плохое, что есть в твоём организме, как губка! А мы тут сделали для тебя АКТИВАТОР УГЛЯ - просто приложи таблетку к экрану и получи код активации!</p>
+
+        <div class="activator">
+            <button onclick="startActivation()">АКТИВИРОВАТЬ УГОЛЬ</button>
+            <div id="scan-area"></div>
+            <div id="progress">Сканирование угля... <span id="percent">0%</span></div>
+            <div id="result">
+                Ваш уголь успешно отсканирован!<br>
+                Вот ваш код активации:<br>
+                <span id="activation-code"></span><br>
+                Напишите этот код зажжённой спичкой на угле для полной активации!
+            </div>
+        </div>
+    </div>
+
+    <div class="fireworks" id="fireworks"></div>
+
+    <footer>
+        <p>© 2025 Активатор Угля. Все права активированы!</p>
+    </footer>
+
+    <script>
+        function generateActivationCode() {
+            const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+            let code = '';
+            for (let i = 0; i < 25; i++) {
+                if (i > 0 && i % 5 === 0) code += '-';
+                code += chars[Math.floor(Math.random() * chars.length)];
+            }
+            return code;
+        }
+
+        function startActivation() {
+            const scanArea = document.getElementById('scan-area');
+            const progress = document.getElementById('progress');
+            const percent = document.getElementById('percent');
+            const result = document.getElementById('result');
+            const activationCode = document.getElementById('activation-code');
+            const fireworks = document.getElementById('fireworks');
+            const button = document.querySelector('button');
+
+            button.style.display = 'none';
+            scanArea.style.display = 'block';
+
+            setTimeout(() => {
+                scanArea.style.display = 'none';
+                progress.style.display = 'block';
+
+                let progressValue = 0;
+                const interval = setInterval(() => {
+                    progressValue += 10;
+                    percent.textContent = `${progressValue}%`;
+                    if (progressValue >= 100) {
+                        clearInterval(interval);
+                        progress.style.display = 'none';
+                        result.style.display = 'block';
+                        activationCode.textContent = generateActivationCode();
+                        startFireworks();
+                    }
+                }, 500);
+            }, 2000);
+        }
+
+        function startFireworks() {
+            const fireworks = document.getElementById('fireworks');
+            fireworks.style.display = 'block';
+
+            for (let i = 0; i < 20; i++) {
+                const spark = document.createElement('div');
+                spark.style.position = 'absolute';
+                spark.style.width = '10px';
+                spark.style.height = '10px';
+                spark.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                spark.style.borderRadius = '50%';
+                spark.style.left = `${Math.random() * 100}%`;
+                spark.style.animation = `fireworks ${1 + Math.random()}s ease-out`;
+                fireworks.appendChild(spark);
+
+                setTimeout(() => spark.remove(), 2000);
+            }
+
+            setTimeout(() => fireworks.style.display = 'none', 3000);
+        }
+    </script>
+</body>
+</html>
