@@ -3,105 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Активированный Уголь - Твой Друг!</title>
+    <title>★ АКТИВИРОВАННЫЙ УГОЛЬ ★</title>
     <style>
-        body {
-            background: linear-gradient(to bottom, #ffcc00, #ff6600);
+        body.coal1 {
+            background-color: #ffcc00;
+            background-image: linear-gradient(to bottom, #ffcc00, #ff6600);
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #ff0000;
-            padding: 20px;
+            color: #000;
             text-align: center;
+        }
+
+        .coal2 {
+            background-color: #0000ff;
+            color: #ffff00;
+            padding: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .coal3 {
+            background: #ff0000;
+            padding: 20px;
             border-bottom: 5px solid #00ff00;
+            border-top: 5px solid #ffff00;
         }
-        header h1 {
-            font-size: 48px;
+
+        .coal3 h1 {
+            font-size: 42px;
             color: #fff;
-            text-shadow: 2px 2px #0000ff;
+            text-shadow: 3px 3px #000000;
             margin: 0;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
         }
-        .container {
-            max-width: 800px;
+
+        .coal4 {
+            width: 800px;
+            max-width: 95%;
             margin: 20px auto;
             background-color: #fff;
+            border: 4px ridge #0000ff;
             padding: 20px;
-            border: 3px solid #0000ff;
-            box-shadow: 0 0 10px #ff00ff;
-            border-radius: 10px;
+            box-shadow: 10px 10px 0px #000000;
         }
-        h2 {
+
+        .coal5 {
             color: #ff0000;
-            text-align: center;
-            font-size: 32px;
-            border-bottom: 2px dashed #00ff00;
+            font-size: 28px;
+            border-bottom: 3px dashed #00ff00;
+            margin-top: 20px;
+            text-transform: uppercase;
         }
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-        .benefits {
+
+        .coal6 {
             background-color: #ffffcc;
-            padding: 15px;
-            margin: 10px 0;
             border: 2px solid #ff6600;
-            border-radius: 5px;
+            padding: 15px;
+            text-align: left;
+            margin: 15px 0;
+            font-size: 16px;
         }
-        .activator {
-            text-align: center;
-            margin: 30px 0;
+
+        .coal6 ul {
+            list-style-type: square;
         }
-        button {
-            background-color: #00ff00;
-            color: #000;
-            border: 3px solid #ff0000;
-            padding: 15px 30px;
-            font-size: 24px;
-            cursor: pointer;
-            transition: transform 0.2s;
+
+        .coal7 {
+            background: #ffcccc;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            font-weight: bold;
+            padding: 10px;
+            margin: 10px 0;
+            animation: coal15 1s infinite;
         }
-        button:hover {
-            transform: scale(1.1);
+
+        @keyframes coal15 {
+            0% { background-color: #ffcccc; }
+            50% { background-color: #ff9999; }
+            100% { background-color: #ffcccc; }
         }
-        #scan-area {
-            margin: 20px auto;
-            width: 300px;
-            height: 200px;
-            background: url('https://via.placeholder.com/300x200?text=Приложите+уголь+сюда') no-repeat center;
-            border: 2px dashed #000;
-            display: none;
-        }
-        #progress {
-            display: none;
-            font-size: 20px;
-            color: #ff00ff;
+
+        .coal8 {
+            background-color: #e0e0e0;
+            border: 3px outset #ccc;
+            padding: 20px;
             margin: 20px 0;
         }
-        #result {
+
+        .coal9 {
+            background-color: #00ff00;
+            color: #000;
+            border: 3px outset #009900;
+            padding: 15px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .coal9:active {
+            border-style: inset;
+        }
+
+        .coal10 {
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #000;
+            border: 4px dashed #ff00ff;
+            display: none;
+            position: relative;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            line-height: 200px;
+            font-size: 20px;
+        }
+
+        .coal11 {
             display: none;
             font-size: 20px;
-            color: #00ff00;
-            text-shadow: 1px 1px #ff0000;
-        }
-        #activation-code {
-            font-family: 'Courier New', monospace;
-            font-size: 24px;
-            color: #0000ff;
             margin: 10px 0;
         }
-        footer {
-            background-color: #0000ff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
+
+        .coal12 {
             width: 100%;
+            height: 25px;
+            background-color: #fff;
+            border: 2px inset #999;
+            margin-top: 5px;
         }
-        .fireworks {
+
+        .coal13 {
+            height: 100%;
+            width: 0%;
+            background-color: #ff0000;
+        }
+
+        .coal14 {
+            display: none;
+            background-color: #000;
+            color: #00ff00;
+            border: 4px double #ffff00;
+            padding: 20px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .coal16 {
+            font-size: 24px;
+            color: #ffff00;
+            background: #0000ff;
+            padding: 10px;
+            border: 2px dashed #00ff00;
+            display: inline-block;
+            margin: 10px 0;
+            min-width: 300px;
+        }
+
+        .coal17 {
+            background: #ffffcc;
+            border: 1px dotted #000;
+            padding: 10px;
+            margin-top: 10px;
+            color: #000;
+            font-size: 14px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .coal18 {
+            background-color: #000099;
+            color: #fff;
+            padding: 10px;
+            margin-top: 30px;
+            border-top: 3px solid #00ff00;
+            font-size: 12px;
+        }
+
+        .coal19 {
             position: fixed;
             top: 0;
             left: 0;
@@ -111,112 +194,206 @@
             z-index: 999;
             display: none;
         }
-        @keyframes fireworks {
-            0% { transform: translateY(100vh); opacity: 1; }
-            100% { transform: translateY(-100vh); opacity: 0; }
+
+        .coal20 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>АКТИВИРОВАННЫЙ УГЛЬ</h1>
-    </header>
+<body class="coal1">
 
-    <div class="container">
-        <h2>Почему уголь - твой лучший друг?</h2>
-        <p>Добро пожаловать на сайт, посвящённый самому крутому изобретению человечества - активированному углю! Это не просто чёрные таблетки, это настоящая магия природы!</p>
+    <div class="coal2">
+        <marquee scrollamount="10">★★★ НОВИНКА! АКТИВАТОР УГЛЯ ВЕРСИЯ 2.0! ★★★ УСПЕЙ ПОЛУЧИТЬ СВОЙ КОД! ★★★ 100% ГАРАНТИЯ! ★★★</marquee>
+    </div>
 
-        <div class="benefits">
-            <h3>Полезность угля:</h3>
-            <p>- Очищает организм от токсинов, как пылесос для твоего живота!<br>
-            - Помогает при отравлениях и вздутии - забудь про проблемы!<br>
-            - Даже зубы отбелить может, если постараться!<br>
-            - Дешёвый и доступный - в любой аптеке за копейки!</p>
+    <div class="coal3">
+        <h1>⚡ АКТИВИРОВАННЫЙ УГОЛЬ ⚡</h1>
+    </div>
+
+    <div class="coal4">
+        <div class="coal5">🎯 Почему уголь - твой друг?</div>
+        <p>Добро пожаловать на сайт самого крутого изобретения - активированного угля! Это настоящая магия природы!</p>
+
+        <div class="coal6">
+            <b>📋 Полезность:</b>
+            <ul>
+                <li>✅ Очищает организм как пылесос!</li>
+                <li>✅ Помогает при отравлениях!</li>
+                <li>✅ Зубы отбелить может!</li>
+                <li>✅ Дешёвый - в любой аптеке!</li>
+            </ul>
         </div>
 
-        <h2>Как это работает?</h2>
-        <p>Активированный уголь - это обычный уголь, который "разбудили" специальным способом. Его поры впитывают всё плохое, что есть в твоём организме, как губка! А мы тут сделали для тебя АКТИВАТОР УГЛЯ - просто приложи таблетку к экрану и получи код активации!</p>
+        <div class="coal7">
+            ⚠️ ТОЛЬКО ДЛЯ ОРИГИНАЛЬНОГО УГЛЯ! ⚠️
+        </div>
 
-        <div class="activator">
-            <button onclick="startActivation()">АКТИВИРОВАТЬ УГОЛЬ</button>
-            <div id="scan-area"></div>
-            <div id="progress">Сканирование угля... <span id="percent">0%</span></div>
-            <div id="result">
-                Ваш уголь успешно отсканирован!<br>
-                Вот ваш код активации:<br>
-                <span id="activation-code"></span><br>
-                Напишите этот код зажжённой спичкой на угле для полной активации!
+        <div class="coal5">🔧 Как активировать?</div>
+        <p>Приложи таблетку к экрану и получи код активации!</p>
+
+        <div class="coal8">
+            <button class="coal9" onclick="coal21()">🚀 АКТИВИРОВАТЬ 🚀</button>
+            
+            <div class="coal10" id="coal_scan">
+                СКАНИРОВАНИЕ...
+            </div>
+            
+            <div class="coal11" id="coal_prog">
+                Обработка данных...
+                <div class="coal12">
+                    <div class="coal13" id="coal_bar"></div>
+                </div>
+            </div>
+
+            <div class="coal14" id="coal_res">
+                🎉 УГОЛЬ АКТИВИРОВАН! 🎉<br><br>
+                Твой код:<br>
+                <span class="coal16" id="coal_key"></span><br><br>
+                <div class="coal17">
+                    📝 ИНСТРУКЦИЯ:<br>
+                    Напиши этот код зажжённой спичкой прямо на таблетке!<br>
+                    ⚠️ Осторожно, не обожгитесь! ⚠️
+                </div>
+                <br>
+                <button class="coal9" onclick="coal21()" style="font-size: 16px; padding: 10px;">🔄 ЕЩЁ КОД</button>
             </div>
         </div>
     </div>
 
-    <div class="fireworks" id="fireworks"></div>
+    <div class="coal18">
+        © 2026 Активатор Угля v2.0 | Все права активированы!
+    </div>
 
-    <footer>
-        <p>© 2025 Активатор Угля. Все права активированы!</p>
-    </footer>
+    <div class="coal19" id="coal_fire"></div>
 
     <script>
-        function generateActivationCode() {
-            const chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
-            let code = '';
-            for (let i = 0; i < 25; i++) {
-                if (i > 0 && i % 5 === 0) code += '-';
-                code += chars[Math.floor(Math.random() * chars.length)];
-            }
-            return code;
-        }
+        var coal22 = [
+            "NXMXM-K3487-YBVBC-D2Q4D-JTYQB",
+            "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99",
+            "PVMJN-6DFY6-9CCP6-7BKTT-D3WVR",
+            "7HNRX-D7KGG-3K4RQ-4WPJ4-YTDFH",
+            "3KHY7-WNT83-DGQKR-F7HPR-844BM",
+            "W269N-WFGWX-YVC9B-4J6C9-T83GX",
+            "MH37W-N47XK-V7XM9-C7227-GCQG9",
+            "NPPR9-FWDCX-D2C8J-H872K-2YT43",
+            "DPH2V-TTNVB-4X9Q3-TJR4H-KHJW4",
+            "NW6C2-QMPVW-D7KKK-3GKT6-VCFB2",
+            "2WH4N-8QGBV-H22JP-CT43Q-MDWWJ",
+            "WNMTR-4C88C-JK8YV-HQ7T2-76DF9",
+            "2F77B-TNFGY-69QQF-B8YKP-D69TJ",
+            "DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ",
+            "QFFDN-GRT3P-VKWWX-X7T3R-8B639",
+            "MNXKQ-WY2CT-JWBJ2-T68TQ-YBH2V",
+            "7TNX7-H36JG-QFF42-K4JYV-YY482",
+            "D3M8K-4YN49-89KYG-4F3DR-TVJW3",
+            "VPMWD-PVNRR-79WJ9-VVJQC-3YH2G",
+            "D6RD9-D4N8T-RT9QX-YW6YT-FCWWJ",
+            "84NGF-MHBT6-FXBX8-QWJK7-DRR8H",
+            "YNMGQ-8RYV3-4PGQ3-C8XTP-7CFBY",
+            "VK7JG-NPHTM-C97JM-9MPGT-3V66T",
+            "2B87N-8KFHP-DKV6R-Y2C8J-PKCKT",
+            "YTMG3-N6DKC-DKB77-7M9GH-8HVX7",
+            "4CPRK-NM3K3-X6XXQ-RXX86-WXCHW",
+            "BT79Q-G7N6G-PGBYW-4YWX6-6F4BT",
+            "N2434-X9D7W-8PF6X-8DV9T-8TYMD",
+            "DXG7C-N36C4-C4HTG-X4T3X-2YV77",
+            "WYPNQ-8C467-V2W6J-TX4WX-WT2RQ",
+            "3NF4D-GF9GY-63VKH-QRC3V-7QW8P",
+            "8PTT6-RNW4C-6V7J2-C2D3X-MHBPB",
+            "GJTYN-HDMQY-FRR76-HVGC7-QPF8P",
+            "XGVPP-NMH47-7TTHJ-W3FW7-8HV2C",
+            "NK96Y-D9CD8-W44CQ-R8YTK-DYJWX",
+            "WGGHN-J84D6-QYCPR-T7PJ7-X766F",
+            "FW7NV-4T673-HF4VX-9X4MM-B4H4T",
+            "RW7WN-FMT44-KRGBK-G44WK-QV7YK"
+        ];
 
-        function startActivation() {
-            const scanArea = document.getElementById('scan-area');
-            const progress = document.getElementById('progress');
-            const percent = document.getElementById('percent');
-            const result = document.getElementById('result');
-            const activationCode = document.getElementById('activation-code');
-            const fireworks = document.getElementById('fireworks');
-            const button = document.querySelector('button');
+        function coal21() {
+            var scan = document.getElementById('coal_scan');
+            var prog = document.getElementById('coal_prog');
+            var bar = document.getElementById('coal_bar');
+            var res = document.getElementById('coal_res');
+            var keySpan = document.getElementById('coal_key');
+            var btns = document.querySelectorAll('.coal9');
 
-            button.style.display = 'none';
-            scanArea.style.display = 'block';
+            btns[0].style.display = 'none';
+            if(btns[1]) btns[1].style.display = 'none';
+            
+            res.style.display = 'none';
+            prog.style.display = 'none';
+            scan.style.display = 'block';
+            scan.innerHTML = "СКАНИРОВАНИЕ...";
 
-            setTimeout(() => {
-                scanArea.style.display = 'none';
-                progress.style.display = 'block';
-
-                let progressValue = 0;
-                const interval = setInterval(() => {
-                    progressValue += 10;
-                    percent.textContent = `${progressValue}%`;
-                    if (progressValue >= 100) {
-                        clearInterval(interval);
-                        progress.style.display = 'none';
-                        result.style.display = 'block';
-                        activationCode.textContent = generateActivationCode();
-                        startFireworks();
+            setTimeout(function() {
+                scan.style.display = 'none';
+                prog.style.display = 'block';
+                var width = 0;
+                var id = setInterval(frame, 50);
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        prog.style.display = 'none';
+                        res.style.display = 'block';
+                        coal23(keySpan);
+                        coal24();
+                    } else {
+                        width++;
+                        bar.style.width = width + '%';
                     }
-                }, 500);
+                }
             }, 2000);
         }
 
-        function startFireworks() {
-            const fireworks = document.getElementById('fireworks');
-            fireworks.style.display = 'block';
+        function coal23(element) {
+            var finalKey = coal22[Math.floor(Math.random() * coal22.length)];
+            var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-';
+            var iterations = 0;
+            
+            var interval = setInterval(function() {
+                var randomString = '';
+                for(var i = 0; i < finalKey.length; i++) {
+                    randomString += chars.charAt(Math.floor(Math.random() * chars.length));
+                }
+                element.innerHTML = randomString;
+                iterations++;
+                
+                if(iterations > 20) {
+                    clearInterval(interval);
+                    element.innerHTML = finalKey;
+                    element.style.color = '#00ff00';
+                    element.style.background = '#000';
+                }
+            }, 50);
+        }
 
-            for (let i = 0; i < 20; i++) {
-                const spark = document.createElement('div');
-                spark.style.position = 'absolute';
-                spark.style.width = '10px';
-                spark.style.height = '10px';
-                spark.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
-                spark.style.borderRadius = '50%';
-                spark.style.left = `${Math.random() * 100}%`;
-                spark.style.animation = `fireworks ${1 + Math.random()}s ease-out`;
-                fireworks.appendChild(spark);
-
-                setTimeout(() => spark.remove(), 2000);
+        function coal24() {
+            var fire = document.getElementById('coal_fire');
+            fire.style.display = 'block';
+            for(var i = 0; i < 50; i++) {
+                var spark = document.createElement('div');
+                spark.className = 'coal20';
+                spark.style.left = Math.random() * 100 + '%';
+                spark.style.top = Math.random() * 100 + '%';
+                spark.style.background = 'hsl(' + Math.random() * 360 + ', 100%, 50%)';
+                fire.appendChild(spark);
+                
+                (function(s) {
+                    var x = (Math.random() - 0.5) * 200;
+                    var y = (Math.random() - 0.5) * 200;
+                    var trans = 'translate(' + x + 'px, ' + y + 'px)';
+                    s.style.transition = 'all 1s ease-out';
+                    setTimeout(function() {
+                        s.style.transform = trans;
+                        s.style.opacity = 0;
+                    }, 10);
+                    setTimeout(function() { s.remove(); }, 1000);
+                })(spark);
             }
-
-            setTimeout(() => fireworks.style.display = 'none', 3000);
+            setTimeout(function() { fire.style.display = 'none'; }, 1500);
         }
     </script>
 </body>
