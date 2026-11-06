@@ -1,276 +1,219 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>★ АКТИВИРОВАННЫЙ УГОЛЬ ★</title>
-    <style>
-        body.coal1 {
-            background-color: #ffcc00;
-            background-image: linear-gradient(to bottom, #ffcc00, #ff6600);
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #000;
-            text-align: center;
-        }
-
-        .coal2 {
-            background-color: #0000ff;
-            color: #ffff00;
-            padding: 5px;
-            font-size: 14px;
-            font-weight: bold;
-            border-bottom: 2px solid #fff;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .coal3 {
-            background: #ff0000;
-            padding: 20px;
-            border-bottom: 5px solid #00ff00;
-            border-top: 5px solid #ffff00;
-        }
-
-        .coal3 h1 {
-            font-size: 42px;
-            color: #fff;
-            text-shadow: 3px 3px #000000;
-            margin: 0;
-            font-family: 'Comic Sans MS', 'Arial', sans-serif;
-        }
-
-        .coal4 {
-            width: 800px;
-            max-width: 95%;
-            margin: 20px auto;
-            background-color: #fff;
-            border: 4px ridge #0000ff;
-            padding: 20px;
-            box-shadow: 10px 10px 0px #000000;
-        }
-
-        .coal5 {
-            color: #ff0000;
-            font-size: 28px;
-            border-bottom: 3px dashed #00ff00;
-            margin-top: 20px;
-            text-transform: uppercase;
-        }
-
-        .coal6 {
-            background-color: #ffffcc;
-            border: 2px solid #ff6600;
-            padding: 15px;
-            text-align: left;
-            margin: 15px 0;
-            font-size: 16px;
-        }
-
-        .coal6 ul {
-            list-style-type: square;
-        }
-
-        .coal7 {
-            background: #ffcccc;
-            border: 2px solid #ff0000;
-            color: #ff0000;
-            font-weight: bold;
-            padding: 10px;
-            margin: 10px 0;
-            animation: coal15 1s infinite;
-        }
-
-        @keyframes coal15 {
-            0% { background-color: #ffcccc; }
-            50% { background-color: #ff9999; }
-            100% { background-color: #ffcccc; }
-        }
-
-        .coal8 {
-            background-color: #e0e0e0;
-            border: 3px outset #ccc;
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        .coal9 {
-            background-color: #00ff00;
-            color: #000;
-            border: 3px outset #009900;
-            padding: 15px 30px;
-            font-size: 24px;
-            font-weight: bold;
-            cursor: pointer;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .coal9:active {
-            border-style: inset;
-        }
-
-        .coal10 {
-            width: 300px;
-            height: 200px;
-            margin: 20px auto;
-            background-color: #000;
-            border: 4px dashed #ff00ff;
-            display: none;
-            position: relative;
-            color: #00ff00;
-            font-family: 'Courier New', monospace;
-            line-height: 200px;
-            font-size: 20px;
-        }
-
-        .coal11 {
-            display: none;
-            font-size: 20px;
-            margin: 10px 0;
-        }
-
-        .coal12 {
-            width: 100%;
-            height: 25px;
-            background-color: #fff;
-            border: 2px inset #999;
-            margin-top: 5px;
-        }
-
-        .coal13 {
-            height: 100%;
-            width: 0%;
-            background-color: #ff0000;
-        }
-
-        .coal14 {
-            display: none;
-            background-color: #000;
-            color: #00ff00;
-            border: 4px double #ffff00;
-            padding: 20px;
-            margin-top: 20px;
-            font-family: 'Courier New', monospace;
-        }
-
-        .coal16 {
-            font-size: 24px;
-            color: #ffff00;
-            background: #0000ff;
-            padding: 10px;
-            border: 2px dashed #00ff00;
-            display: inline-block;
-            margin: 10px 0;
-            min-width: 300px;
-        }
-
-        .coal17 {
-            background: #ffffcc;
-            border: 1px dotted #000;
-            padding: 10px;
-            margin-top: 10px;
-            color: #000;
-            font-size: 14px;
-            font-family: 'Arial', sans-serif;
-        }
-
-        .coal18 {
-            background-color: #000099;
-            color: #fff;
-            padding: 10px;
-            margin-top: 30px;
-            border-top: 3px solid #00ff00;
-            font-size: 12px;
-        }
-
-        .coal19 {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 999;
-            display: none;
-        }
-
-        .coal20 {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: red;
-            border-radius: 50%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1154a4">
+<title>Активированный уголь - Главная страница</title>
+<style>
+:root{--blue:#074e9c;--blue-dark:#063675;--cyan:#e1f1ff;--orange:#f5a82a;--cream:#fff7df;--edge:#bbac8e;--red:#b92b10;--green:#277329}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff8de;color:#29221d;font:13px Tahoma,Verdana,Arial,sans-serif}
+a{color:#004aaf}a:hover{color:#c02000}
+.site{width:100%;min-height:100vh;overflow:hidden}
+.top-mini{height:28px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 24px;background:#073976;color:#e6f5ff;border-bottom:3px solid #2b82d3;font:bold 11px Tahoma,sans-serif}
+.top-mini .right{color:#ffeb75;white-space:nowrap}
+.top-ticker{border-bottom:2px solid #de8e17;background:#ffea7b;color:#782d00;font:bold 12px Tahoma,sans-serif;padding:5px 0;height:27px;overflow:hidden}
+.top-ticker marquee{display:block}
+.hero{position:relative;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:217px;background:linear-gradient(155deg,rgba(255,255,255,.13),transparent 40%),repeating-linear-gradient(110deg,transparent 0 21px,rgba(255,255,255,.15) 21px 23px),linear-gradient(#ffe7a7,#fbb84b 65%,#f7a02a);border-bottom:5px solid #d06b11;padding:13px clamp(20px,4vw,65px) 11px;isolation:isolate}
+.hero:after{content:'';position:absolute;left:0;right:0;bottom:1px;border-bottom:2px solid #ffe8a4}
+.hero-copy{z-index:1;min-width:0}
+.hero-badge{display:inline-block;background:#fffbd9;color:#ad4310;border:1px solid #ba6622;box-shadow:2px 2px #9c632a;padding:5px 9px;font:bold 11px 'Courier New',monospace;letter-spacing:.3px}
+h1{color:#d82e0b;margin:10px 0 3px;font:900 clamp(33px,5vw,61px)/.97 Georgia,'Times New Roman',serif;letter-spacing:-1.1px;text-shadow:2px 2px 0 #fffaaf,4px 4px 0 #81370c}
+h1 .blue{color:#0752a1;text-shadow:2px 2px #fff3aa,4px 4px #356186}
+.hero-sub{margin:9px 0 6px;color:#673206;font:bold clamp(14px,1.6vw,18px) Tahoma,sans-serif}
+.hero-motto{color:#8c370f;font:bold 11px 'Courier New',monospace;letter-spacing:1px;text-transform:uppercase}
+.mascot-wrap{position:relative;z-index:1;flex:0 0 218px;text-align:center;align-self:center}
+.mascot-wrap:before{content:'';position:absolute;inset:14px 3px 18px;border:3px dotted rgba(158,95,13,.33);border-radius:50%;z-index:-1}
+.mascot-svg{display:block;width:208px;max-width:100%;height:184px;margin:auto;filter:drop-shadow(3px 4px 0 rgba(96,61,24,.26));animation:mascot-move 3.4s ease-in-out infinite}
+.mascot-name{position:relative;display:inline-block;background:#fdfdcf;color:#8e340e;font:bold 13px Georgia,serif;padding:3px 11px;border:2px dashed #da5428;box-shadow:3px 3px #d38d30;transform:rotate(-3deg)}
+@keyframes mascot-move{50%{transform:translateY(-4px) rotate(2deg)}}
+.nav{display:flex;align-items:stretch;flex-wrap:wrap;background:linear-gradient(#2b78c5,#06478e);border-top:1px solid #66b5ff;border-bottom:4px solid #002c66;padding:4px 17px;gap:4px}
+.nav a{color:white;display:inline-block;padding:11px 20px;border:2px outset #8cbee9;text-shadow:1px 1px #063976;text-decoration:none;font:bold 12px Tahoma,Arial,sans-serif;background:linear-gradient(#4a9be6,#1167ba 52%,#0952a2);white-space:nowrap}
+.nav a:hover{background:linear-gradient(#f9e78a,#e9a924);border-color:#fff1ac;text-shadow:none;color:#673400}
+.nav a:active{border-style:inset}
+.desk-bar{display:flex;align-items:center;gap:10px;min-height:34px;padding:7px 22px;color:#a22905;background:#fff3b2;border-bottom:2px solid #e6c36f;font:bold 12px Tahoma,sans-serif}
+.desk-bar b{background:#e94420;color:white;padding:3px 6px;border:1px solid #97290d;white-space:nowrap}
+.layout{display:grid;grid-template-columns:203px minmax(0,1fr) 228px;gap:16px;align-items:start;min-height:70vh;padding:16px clamp(12px,2vw,30px) 28px;background:#fff9e8}
+.sidebar{display:flex;flex-direction:column;gap:14px;min-width:0}
+.panel{background:#fffef7;border:1px solid #b8aa84;box-shadow:2px 2px 0 #c4b28d;padding:0 11px 12px;min-width:0}
+.panel-title{position:relative;margin:0 -11px 10px;padding:8px 10px;color:#fff;background:linear-gradient(#478cda 0%,#1a65ad 45%,#054482 50%,#094584 100%);border-bottom:2px solid #073a72;text-align:center;font:bold 12px Tahoma,sans-serif;text-shadow:1px 1px #073975}
+.panel-title.green{background:linear-gradient(#8bc454,#3a8a27 50%,#1e641c 51%,#1c5e19);border-color:#1f6416}
+.panel-title.orange{background:linear-gradient(#ffc465,#ec8722 50%,#cb5b06 51%,#c65b11);border-color:#ae4e0a}
+.panel p{line-height:1.55;margin:7px 0 10px}
+.panel hr{border:0;border-top:1px dashed #c7b687;margin:12px 0}
+.panel-list{list-style:none;margin:0;padding:0}
+.panel-list li{border-bottom:1px dotted #d4c7a8;padding:8px 0}
+.panel-list li:before{content:'»';color:#e13c15;font-weight:bold;margin-right:7px}
+.panel-list li:last-child{border-bottom:0}
+.counter{font:900 22px 'Courier New',monospace;letter-spacing:2px;background:#191c17;color:#aaf885;padding:7px 5px;display:block;text-align:center;margin:9px auto;border:4px inset #9c9a85;text-shadow:0 0 4px #7bef62}
+.note{font-size:11px;color:#6c675d}
+.squiggle{font:bold 14px Georgia,serif;color:#aa3208;text-align:center;padding:10px 3px;background:#fff3c4;border:2px dashed #d75e23;transform:rotate(-3deg);margin:12px 0}
+.sticker{display:block;max-width:165px;margin:10px auto;padding:9px 5px;text-align:center;color:#fffde8;background:repeating-linear-gradient(135deg,#f29228 0 10px,#e0441a 10px 20px);border:3px outset #ffe09f;text-shadow:1px 1px #9e3710;font:900 15px Arial,sans-serif}
+.sticker.blue{background:linear-gradient(#49a1ee,#034c9b)}
+.tiny-links{display:flex;flex-wrap:wrap;gap:4px;justify-content:center}.tiny-links span{padding:4px 5px;background:#dfedff;border:1px solid #6b8dbb;color:#174c83;font:bold 10px Tahoma}
+.main{min-width:0;background:white;border:1px solid #d1c19c;padding:21px 24px 26px;box-shadow:2px 2px #e2d5b8}
+.info-band{display:flex;align-items:center;gap:12px;background:#eef8d8;border:1px solid #8fb54c;border-left:6px solid #5eaa2c;padding:10px 14px;line-height:1.5;margin-bottom:20px}
+.info-band .star{font:bold 29px Georgia,serif;color:#e0970a;text-shadow:1px 1px #8c5515}
+.info-band strong{color:#276019}
+.section-heading{margin:22px 0 12px;border-bottom:3px double #bb631e;padding:0 0 5px;color:#0d4f92;font:bold 23px Georgia,serif}
+.section-heading .number{display:inline-block;vertical-align:middle;padding:5px 8px;margin-right:8px;color:white;background:#1561aa;border:2px outset #9ac6ee;font:bold 13px Tahoma,sans-serif}
+.main p{line-height:1.65;margin:10px 0 14px;font-size:14px}
+.factlist{list-style:none;padding:0;margin:16px 0 16px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.factlist li{background:#fffae7;border:1px solid #e7d3a1;padding:11px 12px 11px 33px;line-height:1.55;position:relative}
+.factlist li:before{content:'✔';color:#257e22;position:absolute;left:11px;top:10px;font-weight:bold}
+.alert{margin:17px 0;padding:9px 12px;border:2px dashed #d0481d;background:#fff4d4;color:#aa2c09;font:bold 12px Tahoma,sans-serif}
+.activator{margin:18px 0 12px;background:#e6ebf3;border:4px outset #b2bfcb;padding:17px 18px 19px;text-align:center;box-shadow:3px 4px 0 #c9c0a5}
+.activator-caption{margin:-10px -11px 16px;padding:7px 12px;background:linear-gradient(#448bdd,#105aa3);color:#fff;text-align:left;border:1px solid #08396f;font:bold 12px Tahoma,sans-serif;text-shadow:1px 1px #032b59}
+.activator-intro{font-size:13px!important;margin-bottom:10px!important}
+.activate-button{border:4px outset #e3f6ac;box-shadow:2px 3px #3c701c;background:linear-gradient(#eaffbf,#a5df52 47%,#59a51f 49%,#3d8e17);color:#153d00;font:900 clamp(16px,2.2vw,23px) Tahoma,sans-serif;padding:13px 22px;cursor:pointer;text-shadow:1px 1px #eaffb7;max-width:100%}
+.activate-button:hover{filter:brightness(1.07)}.activate-button:active{border-style:inset;box-shadow:none;transform:translate(2px,2px)}
+.status-line{font:11px 'Courier New',monospace;color:#54657a;margin-top:12px;line-height:1.5}
+#coal_scan{display:none;position:relative;overflow:hidden;margin:16px auto;width:min(320px,100%);height:143px;background:repeating-linear-gradient(0deg,#102315 0px,#102315 4px,#182f1b 5px);border:5px inset #8b9c9a;box-shadow:inset 0 0 25px #031407;color:#bafc98;font:bold 18px 'Courier New',monospace;line-height:132px;text-shadow:0 0 5px #80e277}
+#coal_scan:after{content:'';position:absolute;left:6px;right:6px;top:12px;height:3px;background:#9cfc64;box-shadow:0 0 9px #94fa72;animation:scanline 1.3s ease-in-out infinite alternate}
+@keyframes scanline{to{top:calc(100% - 17px)}}
+#coal_prog{display:none;margin:16px 0;font-weight:bold;color:#1b4b74}
+.coal12{height:28px;border:4px inset #b0bac5;background:#fff;margin:10px auto;width:min(440px,100%)}
+.coal13{width:0;height:100%;background:repeating-linear-gradient(90deg,#5aa92b 0 15px,#a4dc5b 15px 21px)}
+#coal_res{display:none;background:#fffef4;color:#224b17;padding:15px 9px 18px;border:3px ridge #a9bd86;font:bold 17px Tahoma,sans-serif;overflow-wrap:anywhere;line-height:1.55}
+.coal16{display:inline-block;padding:9px 11px;max-width:100%;min-width:0;background:#0b2410;color:#9eff63;font:bold clamp(11px,1.9vw,16px) 'Courier New',monospace;border:4px inset #94a394;letter-spacing:.3px;overflow-wrap:anywhere;margin:6px 0}
+.coal17{font:13px/1.6 Tahoma,sans-serif;text-align:left;background:#fff4d8;color:#5b3817;margin:12px auto 15px;max-width:590px;padding:10px 12px;border:1px solid #d7b56c}
+.coal17 b{color:#9d390e}
+.guestbook{margin:13px 0 0;border:1px solid #b7cadd;background:#f6faff}
+.guestbook-head{background:#ddecff;color:#0d477e;font:bold 12px Tahoma,sans-serif;padding:7px 10px;border-bottom:1px solid #abc3dc}
+.guestbook-entry{padding:11px 13px 12px;border-bottom:1px dotted #b3c6dd;line-height:1.5;font-size:13px}
+.guestbook-entry:last-child{border-bottom:0}
+.guestbook-entry .from{font:bold 12px Tahoma;color:#0c5b95;margin-bottom:5px}
+.guestbook-entry .time{color:#737d88;font:11px Tahoma}
+.guestbook-entry .quote{font:13px/1.55 Tahoma,sans-serif;color:#282828}
+.right .panel p{font-size:12px}
+.news-item{border-bottom:1px dotted #d4c5a1;padding:8px 0;line-height:1.5}.news-item:last-child{border:0}
+.news-date{font:10px Tahoma;color:#70695a}.news-title{display:block;font:bold 12px Tahoma;color:#0a5394;margin:3px 0}
+.warning-tag{display:inline-block;background:#e43d12;color:#fff;padding:3px 6px;font:bold 10px Tahoma}
+.mini-face{font:bold 37px Georgia,serif;color:#ba4c13;text-align:center}
+.footer{background:linear-gradient(#2467aa,#064180);border-top:5px solid #ffb949;color:#ecf3fa;padding:23px 25px 30px;text-align:center;font:12px/1.8 Tahoma,sans-serif}
+.footer strong{display:block;color:#ffed8e;font:bold 19px Georgia,serif;margin-bottom:4px;text-shadow:1px 1px #4d2800}
+.footer a{color:#fff8c6}
+#coal_fire{position:fixed;inset:0;pointer-events:none;z-index:999;display:none}.coal20{position:absolute;width:10px;height:10px;background:red;border-radius:50%}
+@keyframes blink{50%{visibility:hidden}}.blink{animation:blink 1s steps(1,end) infinite}
+@media(max-width:1050px){.layout{grid-template-columns:170px minmax(0,1fr) 184px;gap:10px;padding:11px}.main{padding:16px}.hero{min-height:190px}.mascot-wrap{flex-basis:185px}.mascot-svg{width:181px;height:162px}}
+@media(max-width:760px){.layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.main{grid-column:1/-1;grid-row:1}.sidebar.left,.sidebar.right{grid-row:2;gap:10px}.top-mini{padding:0 12px}.nav{padding:4px}.nav a{flex:1 1 auto;text-align:center}.hero{padding:14px 15px}.hero h1{font-size:37px}.mascot-wrap{flex-basis:143px}.mascot-svg{width:148px;height:132px}.mascot-name{font-size:11px}}
+@media(max-width:490px){.top-mini .right{display:none}.hero{align-items:center;gap:2px;padding:13px 10px;flex-direction:column;text-align:center;gap:9px}.hero-copy{width:100%}.hero h1{font-size:clamp(27px,7.7vw,34px);letter-spacing:-.5px}.hero-badge{font-size:9px}.hero-sub{font-size:12px}.hero-motto{font-size:9px}.mascot-wrap{flex-basis:auto}.mascot-svg{width:126px;height:112px}.mascot-name{font-size:9px;padding:3px 4px}.nav a{flex:1 1 43%;font-size:11px;padding:8px 4px}.desk-bar{font-size:11px;padding:8px}.layout{gap:9px;padding:9px}.sidebar .panel{padding:0 7px 10px}.sidebar .panel-title{margin:0 -7px 8px;font-size:11px;padding:7px 3px}.sidebar .panel p{font-size:11px}.main{padding:13px}.section-heading{font-size:21px}.factlist{grid-template-columns:1fr}.counter{font-size:17px;letter-spacing:1px}.activator{padding:12px 9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.blink,.mascot-svg,#coal_scan:after{animation:none}}
+</style>
 </head>
-<body class="coal1">
-
-    <div class="coal2">
-        <marquee scrollamount="10">★★★ НОВИНКА! АКТИВАТОР УГЛЯ ВЕРСИЯ 2.0! ★★★ УСПЕЙ ПОЛУЧИТЬ СВОЙ КОД! ★★★ 100% ГАРАНТИЯ! ★★★</marquee>
+<body>
+<div class="site">
+ <div class="top-mini"><span>★ ДОБРО ПОЖАЛОВАТЬ НА САЙТ АКТИВИРОВАННОГО УГЛЯ ★</span><span class="right">ВЕРСИЯ 2.0 • РАБОТАЕТ ДАЖЕ В ПЯТНИЦУ</span></div>
+ <div class="top-ticker"><marquee scrollamount="5">★★★ СЕНСАЦИЯ! УГОЛЬ ПО-ПРЕЖНЕМУ ЧЁРНЫЙ! ★★★ КАЖДАЯ ТАБЛЕТКА ЗАСЛУЖИВАЕТ СВОЙ КОД! ★★★ ПРИЯТНОГО ПРЕБЫВАНИЯ! ★★★</marquee></div>
+ <header class="hero" id="top">
+  <div class="hero-copy">
+   <div class="hero-badge">СЕКРЕТНЫЙ ОТДЕЛ АКТИВАЦИИ № 01</div>
+   <h1>АКТИВИРОВАННЫЙ<br><span class="blue">УГОЛЬ!</span></h1>
+   <div class="hero-sub">У тебя есть таблетка? У нас есть для неё код.</div>
+   <div class="hero-motto">БЕЗ СМС • БЕЗ ОЧЕРЕДЕЙ • С УВАЖЕНИЕМ К УГЛЮ</div>
+  </div>
+  <div class="mascot-wrap" role="img" aria-label="Григорий - улыбающийся мультяшный кусочек угля в кепке">
+   <svg class="mascot-svg" viewBox="0 0 240 215" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+     <linearGradient id="rockGrad" x1=".1" y1="0" x2=".95" y2="1"><stop stop-color="#74787b"/><stop offset=".40" stop-color="#40464a"/><stop offset="1" stop-color="#21272b"/></linearGradient>
+     <linearGradient id="hatGrad" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5fb1e5"/><stop offset="1" stop-color="#1467a5"/></linearGradient>
+    </defs>
+    <ellipse cx="122" cy="200" rx="76" ry="9" fill="#a16f2e" opacity=".35"/>
+    <path d="M77 167 Q69 181 68 188" fill="none" stroke="#232c30" stroke-width="9" stroke-linecap="round"/>
+    <path d="M161 167 Q170 178 172 188" fill="none" stroke="#232c30" stroke-width="9" stroke-linecap="round"/>
+    <path d="M68 186 Q48 182 45 192 Q44 200 76 199 L84 192 Q83 187 68 186Z" fill="#ed7b24" stroke="#262c2e" stroke-width="4"/>
+    <path d="M170 186 Q184 181 194 189 Q204 200 163 201 L156 194Z" fill="#ed7b24" stroke="#262c2e" stroke-width="4"/>
+    <path d="M56 113 Q28 98 18 78" fill="none" stroke="#2e3439" stroke-width="11" stroke-linecap="round"/>
+    <path d="M181 116 Q211 100 215 76" fill="none" stroke="#292e31" stroke-width="11" stroke-linecap="round"/>
+    <path d="M10 66 Q7 54 15 54 Q23 56 27 64 L33 58 Q39 55 40 63 Q40 76 29 83 Q15 86 10 66Z" fill="#fff1d2" stroke="#32343a" stroke-width="4"/>
+    <path d="M212 75 Q205 70 207 59 Q208 53 213 55 L216 65 L218 47 Q220 39 225 45 L228 62 Q235 53 238 61 Q242 71 234 82 Q222 92 212 75Z" fill="#fff1d2" stroke="#32343a" stroke-width="4"/>
+    <path d="M63 41 L106 25 L159 32 L193 68 L195 122 L169 172 L119 187 L66 175 L38 132 L43 79Z" fill="url(#rockGrad)" stroke="#1c272d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M63 41 L106 25 L95 68 L48 81Z" fill="#a0a3a3" opacity=".65"/>
+    <path d="M107 27 L159 33 L182 67 L149 55 L95 68Z" fill="#737c82" opacity=".54"/>
+    <path d="M48 84 L95 69 L73 132 L41 131Z" fill="#72787b" opacity=".45"/>
+    <path d="M169 170 L185 126 L153 144 L119 185Z" fill="#0c171d" opacity=".32"/>
+    <path d="M52 95 L64 83" stroke="#c4c6bf" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+    <path d="M146 46 L169 60" stroke="#a7b2b3" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+    <path d="M79 96 Q86 89 98 95" fill="none" stroke="#161d20" stroke-width="4" stroke-linecap="round"/>
+    <path d="M139 95 Q147 87 159 93" fill="none" stroke="#161d20" stroke-width="4" stroke-linecap="round"/>
+    <ellipse cx="91" cy="112" rx="17" ry="20" fill="#fbfcf6" stroke="#202428" stroke-width="3.4"/>
+    <ellipse cx="151" cy="111" rx="17" ry="20" fill="#fbfcf6" stroke="#202428" stroke-width="3.4"/>
+    <ellipse cx="97" cy="117" rx="7" ry="10" fill="#20272a"/><ellipse cx="145" cy="116" rx="7" ry="10" fill="#20272a"/>
+    <circle cx="99" cy="113" r="2.5" fill="white"/><circle cx="148" cy="112" r="2.5" fill="white"/>
+    <ellipse cx="68" cy="133" rx="10" ry="5" fill="#e27b73" opacity=".7"/><ellipse cx="172" cy="132" rx="10" ry="5" fill="#e27b73" opacity=".62"/>
+    <path d="M102 141 Q121 160 141 140" fill="#5f1f25" stroke="#161d1e" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M109 146 Q122 143 134 146 Q124 156 114 153Z" fill="#ee8f7d"/>
+    <path d="M70 43 Q98 8 149 20 Q177 27 183 50 L68 59Z" fill="url(#hatGrad)" stroke="#1b343e" stroke-width="5"/>
+    <path d="M61 55 Q114 44 195 47 Q194 62 176 67 L70 70 Q58 65 61 55Z" fill="#0c5e9c" stroke="#14343e" stroke-width="5"/>
+    <path d="M103 25 Q130 21 152 31" fill="none" stroke="#9ed6ee" stroke-width="5" stroke-linecap="round"/>
+    <rect x="121" y="30" width="21" height="11" rx="3" fill="#ffcf5e" stroke="#2b3c43" stroke-width="2"/>
+   </svg>
+   <div class="mascot-name">★ ГРИГОРИЙ ПРИВЕТСТВУЕТ ★</div>
+  </div>
+ </header>
+ <nav class="nav" aria-label="Меню"><a href="#top">ГЛАВНАЯ</a><a href="#about">ЧТО ЗА УГОЛЬ?</a><a href="#activate">АКТИВИРОВАТЬ УГОЛЬ</a><a href="#guestbook">ГОСТЕВАЯ КНИГА</a><a href="#footer">В САМЫЙ НИЗ</a></nav>
+ <div class="desk-bar"><b class="blink">ВНИМАНИЕ!</b> Срочная новость: Григорий нашёл уголь. Подробности выясняются.</div>
+ <div class="layout">
+  <aside class="sidebar left">
+   <div class="panel"><h2 class="panel-title">НАВИГАЦИЯ</h2><ul class="panel-list"><li><a href="#about">Про уголь</a></li><li><a href="#activate">Получить код</a></li><li><a href="#guestbook">Гостевая книга</a></li><li><a href="#footer">Подвал</a></li></ul></div>
+   <div class="panel"><h2 class="panel-title green">УГОЛЬНЫЙ УЧЁТ</h2><p style="text-align:center"><b>СЧЁТЧИК УГЛЯ</b></p><span class="counter">000404</span><p class="note" style="text-align:center">Уголь не найден.<br>Но вы держитесь.</p></div>
+   <div class="panel"><h2 class="panel-title orange">ОБЪЯВЛЕНИЕ</h2><div class="sticker">СРОЧНО!<br>УГОЛЬ ИЩЕТ КОД</div><p style="text-align:center">Выдаём бесплатно. Одно нажатие - одна счастливая таблетка.</p></div>
+   <div class="panel"><h2 class="panel-title">ВАЖНО ЗНАТЬ</h2><p>Если твой уголь молчит - это нормально. Не нужно его тормошить.</p><div class="tiny-links"><span>УГОЛЬ</span><span>ТАБЛЕТКА</span><span>КОД</span></div></div>
+  </aside>
+  <main class="main">
+   <div class="info-band"><span class="star">★</span><div><strong>Добро пожаловать!</strong><br>Здесь выдают коды активации для угля. Зачем? Мы тоже однажды задались этим вопросом.</div></div>
+   <section id="about">
+    <h2 class="section-heading"><span class="number">01</span> Что здесь происходит?</h2>
+    <p>Представь: лежит в аптечке таблетка активированного угля. Обычная, ничем не примечательная. А где её <b>личный код активации</b>? Непорядок.</p>
+    <p>Мы решили исправить ситуацию. Здесь уголь может пройти торжественную процедуру и получить персональный набор букв и цифр. Всё серьёзно. Почти.</p>
+    <ul class="factlist"><li>Никаких анкет и регистрации.</li><li>На активацию уходит всего несколько секунд.</li><li>Код выдаётся прямо на экране.</li><li>Можно активировать хоть всю аптечку.</li></ul>
+    <div class="alert">ВАЖНО: Код предназначен исключительно для поднятия настроения. Таблетка от него своих свойств не меняет.</div>
+   </section>
+   <section id="activate">
+    <h2 class="section-heading"><span class="number">02</span> Активировать таблетку</h2>
+    <p>Положи уголь рядом с компьютером, нажми кнопку и дождись результата. Если угля под рукой нет, мы никому не расскажем.</p>
+    <div class="activator">
+     <div class="activator-caption">▣ МАСТЕР АКТИВАЦИИ УГЛЯ - ВЕРСИЯ 2.0</div>
+     <p class="activator-intro"><b>Состояние:</b> таблетка ожидает великого события.</p>
+     <button type="button" class="activate-button coal9" onclick="coal21()">АКТИВИРОВАТЬ УГОЛЬ!</button>
+     <div id="coal_scan">СКАНИРОВАНИЕ...</div>
+     <div id="coal_prog">Подождите. Идёт согласование с углём...<div class="coal12"><div id="coal_bar" class="coal13"></div></div></div>
+     <div id="coal_res"><span style="color:#29751e">✔ АКТИВАЦИЯ ЗАВЕРШЕНА!</span><br><small>Ваш секретный код:</small><br><span id="coal_key" class="coal16"></span><br>
+      <div class="coal17"><b>ЧТО ДЕЛАТЬ С КОДОМ?</b><br>Сохрани на память, покажи друзьям или оставь рядом с таблеткой. Сам уголь пока не сообщил, что предпочитает.</div>
+      <button type="button" class="activate-button coal9" onclick="coal21()" style="font-size:16px;padding:10px 14px">АКТИВИРОВАТЬ ЕЩЁ</button>
+     </div>
+     <div class="status-line">[ СИСТЕМА ГОТОВА ] • ДОСТУП ОТКРЫТ • УГОЛЬ НЕ ПРОТИВ</div>
     </div>
-
-    <div class="coal3">
-        <h1>⚡ АКТИВИРОВАННЫЙ УГОЛЬ ⚡</h1>
+   </section>
+   <section id="guestbook">
+    <h2 class="section-heading"><span class="number">03</span> Гостевая книга</h2>
+    <p>Несколько посланий от людей, которые тоже решили разобраться с углём.</p>
+    <div class="guestbook">
+     <div class="guestbook-head">ГОСТЕВАЯ КНИГА • Страница 1 из 1</div>
+     <div class="guestbook-entry"><div class="from">Андрей <span class="time">| 18:46</span></div><div class="quote">Сначала посмеялся, а потом всё-таки пошёл искать уголь в аптечке.</div></div>
+     <div class="guestbook-entry"><div class="from">Костя <span class="time">| 15:03</span></div><div class="quote">Бабушка спросила, зачем активировать уже активированный уголь. Хороший вопрос.</div></div>
+     <div class="guestbook-entry"><div class="from">Марина <span class="time">| 22:17</span></div><div class="quote">Код получила. Теперь осталось объяснить таблетке, что с ним делать.</div></div>
     </div>
+   </section>
+  </main>
+  <aside class="sidebar right">
+   <div class="panel"><h2 class="panel-title orange">УГОЛЬНЫЕ НОВОСТИ</h2>
+    <div class="news-item"><span class="warning-tag blink">МОЛНИЯ</span><span class="news-title">Таблетка получила код!</span>В аптечке царит праздничная атмосфера.</div>
+    <div class="news-item"><span class="news-date">Сегодня, 09:41</span><span class="news-title">Григорий вышел на связь</span>«Я уголь», - подтвердил он.</div>
+    <div class="news-item"><span class="news-date">Вчера, 17:22</span><span class="news-title">Мнение специалистов</span>Обычный уголь отличается от активированного наличием амбиций.</div>
+   </div>
+   <div class="panel"><h2 class="panel-title green">СОВЕТ ДНЯ</h2><p><b>Как узнать, что уголь готов?</b></p><p>Спроси его. Если молчит, переходи к кнопке активации.</p><div class="squiggle">ОДОБРЕНО<br>ГРИГОРИЕМ!</div></div>
+   <div class="panel"><h2 class="panel-title">СПРАВОЧНАЯ</h2><p><b>Вопрос:</b> А если активировать одну таблетку два раза?</p><p><b>Ответ:</b> Она станет обладателем двух кодов. Нам кажется, это уже успех.</p><hr><p><b>Вопрос:</b> Григорий настоящий?</p><p><b>Ответ:</b> Он просил не обсуждать его личную жизнь.</p></div>
+   <div class="panel"><h2 class="panel-title orange">РЕКЛАМНАЯ ПАУЗА</h2><div class="sticker blue">УГОЛЬ<br>ВЫБИРАЕТ ТЕБЯ!</div><p class="note" style="text-align:center">Объявление оплачено Григорием. Двумя камушками.</p></div>
+  </aside>
+ </div>
+ <footer class="footer" id="footer"><strong>СПАСИБО, ЧТО ЗАГЛЯНУЛИ!</strong>Если уголь всё ещё не активирован - кнопка чуть выше.<br>Григорий машет вам на прощание. Хотя, возможно, он просто разминает руку.<br><a href="#top">↑ Вернуться наверх</a> • <a href="#activate">Активировать ещё один уголь</a></footer>
+</div>
+<div id="coal_fire"></div>
+<script>
 
-    <div class="coal4">
-        <div class="coal5">🎯 Почему уголь - твой друг?</div>
-        <p>Добро пожаловать на сайт самого крутого изобретения - активированного угля! Это настоящая магия природы!</p>
-
-        <div class="coal6">
-            <b>📋 Полезность:</b>
-            <ul>
-                <li>✅ Очищает организм как пылесос!</li>
-                <li>✅ Помогает при отравлениях!</li>
-                <li>✅ Зубы отбелить может!</li>
-                <li>✅ Дешёвый - в любой аптеке!</li>
-            </ul>
-        </div>
-
-        <div class="coal7">
-            ⚠️ ТОЛЬКО ДЛЯ ОРИГИНАЛЬНОГО УГЛЯ! ⚠️
-        </div>
-
-        <div class="coal5">🔧 Как активировать?</div>
-        <p>Приложи таблетку к экрану и получи код активации!</p>
-
-        <div class="coal8">
-            <button class="coal9" onclick="coal21()">🚀 АКТИВИРОВАТЬ 🚀</button>
-            
-            <div class="coal10" id="coal_scan">
-                СКАНИРОВАНИЕ...
-            </div>
-            
-            <div class="coal11" id="coal_prog">
-                Обработка данных...
-                <div class="coal12">
-                    <div class="coal13" id="coal_bar"></div>
-                </div>
-            </div>
-
-            <div class="coal14" id="coal_res">
-                🎉 УГОЛЬ АКТИВИРОВАН! 🎉<br><br>
-                Твой код:<br>
-                <span class="coal16" id="coal_key"></span><br><br>
-                <div class="coal17">
-                    📝 ИНСТРУКЦИЯ:<br>
-                    Напиши этот код зажжённой спичкой прямо на таблетке!<br>
-                    ⚠️ Осторожно, не обожгитесь! ⚠️
-                </div>
-                <br>
-                <button class="coal9" onclick="coal21()" style="font-size: 16px; padding: 10px;">🔄 ЕЩЁ КОД</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="coal18">
-        © 2026 Активатор Угля v2.0 | Все права активированы!
-    </div>
-
-    <div class="coal19" id="coal_fire"></div>
-
-    <script>
         var coal22 = [
             "NXMXM-K3487-YBVBC-D2Q4D-JTYQB",
             "TX9XD-98N7V-6WMQ6-BX7FG-H8Q99",
@@ -322,6 +265,7 @@
 
             btns[0].style.display = 'none';
             if(btns[1]) btns[1].style.display = 'none';
+            bar.style.width = '0%';
             
             res.style.display = 'none';
             prog.style.display = 'none';
@@ -338,6 +282,7 @@
                         clearInterval(id);
                         prog.style.display = 'none';
                         res.style.display = 'block';
+                        if (btns[1]) btns[1].style.display = 'inline-block';
                         coal23(keySpan);
                         coal24();
                     } else {
@@ -395,6 +340,7 @@
             }
             setTimeout(function() { fire.style.display = 'none'; }, 1500);
         }
-    </script>
+    
+</script>
 </body>
 </html>
